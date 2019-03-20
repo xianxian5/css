@@ -48,4 +48,35 @@
 5. flex：0 1 auto ，他是flex-grow，flex-shrink，和flex-basis的缩写
 6. align-self：默认继承父亲的 align-items属性，没有则stretch
 
+### flex父元素对子元素的效果demo
+#### align-content属性只有在定义了多根轴线才起作用（即父级元素的大小容不下所有的子元素，并且父元素采用了wrap或者wrap-reverse，可形成多根轴线）
+```
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{ padding:0px; margin:0px;}
+.contain{ display:flex;flex-flow:row wrap; justify-content:center;align-items:center;  align-content:center; width:500px; height:500px; }
+.contain div{ border:1px solid #000; background:red; color:#fff;margin-right:10px; margin-bottom:10px;}
+.div1{ height:100px; width:200px;}
+.div2{ height:200px; width:200px;}
+.div3{ height:100px; width:100px;}
+</style>
+</head>
+
+<body>
+	<div class="contain">
+    	<div class="div1">1</div>
+        <div class="div2">这边内容多的多多读读堵啊撒多阿士大夫哦撒多萨杜佛山达士大夫哦苏打粉撒多UFOuasodfasdfuo阿萨德佛</div>
+        <div class="div3">3</div>
+        <div class="div1">1</div>
+    </div>
+</body>
+</html>
+```
+
+
+
 
