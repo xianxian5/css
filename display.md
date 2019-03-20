@@ -9,7 +9,7 @@
 
 ####重点记录flex和inline-flex
 当给元素定义为flex时，元素为块级元素，它的宽度是父元素的宽度，或者定义的宽度。当定义inline-flex，元素为内联元素，它的宽度是内容的宽度。
-···
+```
 <!doctype html>
 <html>
 <head>
@@ -32,6 +32,6 @@
     </div>
 </body>
 </html>
-···
+```
 
 
