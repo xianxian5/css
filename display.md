@@ -76,7 +76,33 @@
 </body>
 </html>
 ```
+### 子元素上的几个属性，相对比较简单。
+```
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{ padding:0px; margin:0px;}
+.contain{ display:flex;flex-flow:row no-wrap; justify-content:center; align-items:center; align-content:center; width:500px; }
+.contain div{ border:1px solid #000; background:red; color:#fff;margin-right:10px; margin-bottom:10px;}
+.div1{ height:200px; width:300px; order:1; flex:0 0 auto; }
+.div2{ height:100px; width:100px; order:1; flex-basis:300px;}
+.div3{ height:100px; width:200px; order:0; align-self:flex-end;}
+</style>
+</head>
 
+<body>
+	<div class="contain">
+    	<div class="div1">1</div>
+        <div class="div2">这边内容多的多多读读堵啊撒多阿士大夫哦撒多萨杜佛山达士大夫哦苏打粉撒多UFOuasodfasdfuo阿萨德佛</div>
+        <div class="div3">3</div>
+    </div>
+</body>
+</html>
+
+```
 
 
 
